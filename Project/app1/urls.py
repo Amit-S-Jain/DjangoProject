@@ -2,6 +2,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('home/',views.home),
+    path('home/<str:bandName>',views.home),
     path('httpRequestParam/',views.httpRequestParam)
 ]
